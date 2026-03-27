@@ -1,4 +1,4 @@
-# Convoy Stream
+# Phalanx Stream
 
 Reactive streams that bridge push-based sources into pull-based fiber iteration. WebSocket frames, SSE events, file tails, timers--they all become composable pipelines you consume with `foreach`.
 
@@ -20,7 +20,7 @@ Reactive streams that bridge push-based sources into pull-based fiber iteration.
 ## Installation
 
 ```bash
-composer require convoy/stream
+composer require phalanx/stream
 ```
 
 Requires PHP 8.4+.
@@ -30,7 +30,7 @@ Requires PHP 8.4+.
 ```php
 <?php
 
-use Convoy\Stream\Emitter;
+use Phalanx\Stream\Emitter;
 
 // Create a stream from a producer
 $prices = Emitter::produce(static function (Channel $ch) use ($exchange) {
@@ -216,7 +216,7 @@ $stream = Emitter::produce(static function (Channel $ch, StreamContext $ctx) {
 ```php
 <?php
 
-use Convoy\Stream\ScopedStream;
+use Phalanx\Stream\ScopedStream;
 
 $stream = ScopedStream::from($scope, static function (Channel $ch, StreamContext $ctx) {
     while ($msg = $queue->receive()) {

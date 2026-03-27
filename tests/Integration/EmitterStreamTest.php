@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream\Tests\Integration;
+namespace Phalanx\Stream\Tests\Integration;
 
 use Closure;
-use Convoy\Stream\Channel;
-use Convoy\Stream\Contract\StreamContext;
-use Convoy\Stream\Emitter;
-use Convoy\Stream\Tests\Support\AsyncTestCase;
+use Phalanx\Stream\Channel;
+use Phalanx\Stream\Contract\StreamContext;
+use Phalanx\Stream\Emitter;
+use Phalanx\Stream\Tests\Support\AsyncTestCase;
 use PHPUnit\Framework\Attributes\Test;
 use React\EventLoop\Loop;
 use React\Stream\ThroughStream;
@@ -145,7 +145,7 @@ final class EmitterStreamTest extends AsyncTestCase
             $ch->emit('test');
         });
 
-        $this->assertInstanceOf(\Convoy\Stream\Contract\StreamSource::class, $emitter);
+        $this->assertInstanceOf(\Phalanx\Stream\Contract\StreamSource::class, $emitter);
     }
 
     #[Test]

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream;
+namespace Phalanx\Stream;
 
 enum StreamEvent: string
 {

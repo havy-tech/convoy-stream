@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream\Tests\Unit;
+namespace Phalanx\Stream\Tests\Unit;
 
-use Convoy\Stream\StreamEvent;
+use Phalanx\Stream\StreamEvent;
 use PHPUnit\Framework\TestCase;
 
 final class StreamEventTest extends TestCase

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream\Tests\Unit;
+namespace Phalanx\Stream\Tests\Unit;
 
-use Convoy\Stream\Channel;
+use Phalanx\Stream\Channel;
 use PHPUnit\Framework\TestCase;
 
 use function React\Async\async;

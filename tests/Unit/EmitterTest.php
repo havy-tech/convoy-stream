@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream\Tests\Unit;
+namespace Phalanx\Stream\Tests\Unit;
 
 use Closure;
-use Convoy\Stream\Channel;
-use Convoy\Stream\Contract\StreamContext;
-use Convoy\Stream\Emitter;
-use Convoy\Stream\Tests\Support\AsyncTestCase;
+use Phalanx\Stream\Channel;
+use Phalanx\Stream\Contract\StreamContext;
+use Phalanx\Stream\Emitter;
+use Phalanx\Stream\Tests\Support\AsyncTestCase;
 use Evenement\EventEmitter;
 use PHPUnit\Framework\Attributes\Test;
 use React\EventLoop\Loop;

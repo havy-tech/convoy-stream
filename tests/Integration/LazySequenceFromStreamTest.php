@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream\Tests\Integration;
+namespace Phalanx\Stream\Tests\Integration;
 
-use Convoy\Application;
-use Convoy\Stream\Emitter;
-use Convoy\Stream\ScopedStream;
-use Convoy\Stream\Tests\Support\AsyncTestCase;
+use Phalanx\Application;
+use Phalanx\Stream\Emitter;
+use Phalanx\Stream\ScopedStream;
+use Phalanx\Stream\Tests\Support\AsyncTestCase;
 use PHPUnit\Framework\Attributes\Test;
 use React\EventLoop\Loop;
 use React\Stream\ThroughStream;

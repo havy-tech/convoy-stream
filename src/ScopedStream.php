@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream;
+namespace Phalanx\Stream;
 
 use Closure;
-use Convoy\ExecutionScope;
-use Convoy\Stream\Contract\StreamContext;
-use Convoy\Stream\Contract\StreamSource;
-use Convoy\Stream\Terminal;
+use Phalanx\ExecutionScope;
+use Phalanx\Stream\Contract\StreamContext;
+use Phalanx\Stream\Contract\StreamSource;
+use Phalanx\Stream\Terminal;
 use React\Stream\ReadableStreamInterface;
 
 final class ScopedStream

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Convoy\Stream;
+namespace Phalanx\Stream;
 
-use Convoy\Stream\Contract\StreamContext;
-use Convoy\Stream\Contract\StreamSource;
-use Convoy\Stream\Contract\Streamable;
+use Phalanx\Stream\Contract\StreamContext;
+use Phalanx\Stream\Contract\StreamSource;
+use Phalanx\Stream\Contract\Streamable;
 use Evenement\EventEmitterInterface;
 use Generator;
 use React\EventLoop\Loop;
@@ -490,23 +490,23 @@ final class Emitter implements StreamSource
         return $emitter;
     }
 
-    public function toArray(): \Convoy\Stream\Terminal\Collect
+    public function toArray(): \Phalanx\Stream\Terminal\Collect
     {
-        return new \Convoy\Stream\Terminal\Collect($this);
+        return new \Phalanx\Stream\Terminal\Collect($this);
     }
 
-    public function reduce(callable $fn, mixed $initial = null): \Convoy\Stream\Terminal\Reduce
+    public function reduce(callable $fn, mixed $initial = null): \Phalanx\Stream\Terminal\Reduce
     {
-        return new \Convoy\Stream\Terminal\Reduce($this, $fn, $initial);
+        return new \Phalanx\Stream\Terminal\Reduce($this, $fn, $initial);
     }
 
-    public function first(): \Convoy\Stream\Terminal\First
+    public function first(): \Phalanx\Stream\Terminal\First
     {
-        return new \Convoy\Stream\Terminal\First($this);
+        return new \Phalanx\Stream\Terminal\First($this);
     }
 
-    public function consume(): \Convoy\Stream\Terminal\Drain
+    public function consume(): \Phalanx\Stream\Terminal\Drain
     {
-        return new \Convoy\Stream\Terminal\Drain($this);
+        return new \Phalanx\Stream\Terminal\Drain($this);
     }
 }
